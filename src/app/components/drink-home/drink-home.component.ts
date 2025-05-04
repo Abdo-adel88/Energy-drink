@@ -14,11 +14,16 @@ import { ContactComponent } from '../contact/contact.component';
 export class DrinkHomeComponent {
   showStaticCanFromNitro = false;
   showStaticCanFromDate = false;
-  
+  isLoading = true;
   get showStaticCan(): boolean {
     return this.showStaticCanFromNitro || this.showStaticCanFromDate;
   }
-  
+  ngOnInit(): void {
+    // بعد 4 ثواني يخفي الـ loading
+    setTimeout(() => {
+      this.isLoading = false;
+    }, 4000);
+  }
   onNitroToggle(value: boolean) {
     // console.log('onNitroToggle', value);
     this.showStaticCanFromNitro = value;

@@ -1,3 +1,12 @@
+
+<!-- From Uiverse.io by elijahgummer --> 
+@if (isLoading) {
+<div class="d-flex align-items-center justify-content-center vh-100 w-100 bg-black">
+  <div class="loader"></div>
+  
+</div>
+}
+@else {
 <app-nitro-can (toggleCanJpg)="onNitroToggle($event)"></app-nitro-can>
 
 <app-date-can
@@ -6,6 +15,5 @@
 </app-date-can>
 
 <app-all-can [showStaticCan]="showStaticCanFromDate"></app-all-can>
-<section id="contact-section">
   <app-contact></app-contact>
-</section>
+}
