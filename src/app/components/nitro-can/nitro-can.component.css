@@ -1,0 +1,131 @@
+.body {
+    background-color: #000000;
+    font-family: Arial, sans-serif;
+    position: relative;
+  }
+  
+  .cans-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 150px; /* ترفع الكان فوق شويه */
+  }
+  
+  .nitro-bg {
+    width: 100%;
+    max-width: 1500px;
+    z-index: 1;
+  }
+  
+  .can-svg {
+    position: absolute;
+    top:0;
+    transform: translateY(-50%);
+    height: 700px;
+
+    z-index: 2;
+    transition: transform 0.3s ease-out;
+    will-change: transform;
+    
+  }
+  .can-jpg {
+    position: absolute;
+    top: 30%;
+    width: 843px;
+    height: 330px;
+    transform: translatex(-45%);
+    z-index: 2;
+    transition: transform 0.3s ease-out;
+    will-change: transform;
+    opacity: 1;
+  transition: opacity 0s ease;
+
+  }
+  
+  .vh-80{
+    height: 100vh;
+  }
+
+
+  .mt-8{
+    padding-top: 6rem;
+  }
+  .ms-9{
+    margin-left: 12rem;
+  }
+  .ms-7{
+    margin-left: 6rem;
+  }
+  .buttons {
+   
+    border: none;
+    width: 153px;
+      height: 44px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+
+   .button-with{
+    background-color: var(--color-white);
+   }
+  
+  }
+  .button-black{
+    background-color: var(--color-black) !important;
+   color: white;
+   border: solid 1px var(--color-white);
+}
+.can-mask-container {
+  width: 700px;
+  height: 700px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+  overflow: visible; /* 👈 مهم علشان محتوى داخلي يبان بالكامل */
+
+  background-image: url('/assets/img/can.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  mask-position: center;
+  -webkit-mask-position: center;
+  z-index: 3;
+  opacity: 0;
+  transition: opacity 0 ease;
+
+}
+
+.cover-inside {
+  width: 696px;
+  height: 500px;
+  overflow: hidden;
+  background-image: url('/assets/img/cover.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 0;
+  /* margin: 0 auto; */
+  margin-top: 218px;
+  z-index: 3;
+  margin-right: 11px;
+
+  mask-image: url('/assets/img/can.png');
+  -webkit-mask-image: url('/assets/img/can.png');
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  mask-position: top;
+  -webkit-mask-position: top;
+  mix-blend-mode: color-burn;
+  overflow: hidden;
+
+}

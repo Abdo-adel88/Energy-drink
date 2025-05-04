@@ -1,0 +1,11 @@
+<app-nitro-can (toggleCanJpg)="onNitroToggle($event)"></app-nitro-can>
+
+<app-date-can
+  [showCanJpg]="showStaticCan"
+  (toggleStaticCan)="onDateToggle($event)">
+</app-date-can>
+
+<app-all-can [showStaticCan]="showStaticCanFromDate"></app-all-can>
+<section id="contact-section">
+  <app-contact></app-contact>
+</section>

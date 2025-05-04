@@ -1,0 +1,90 @@
+.can-container {
+  width: 220px;
+  height: auto;
+}
+
+.can-img {
+  width: 100%;
+
+  position: relative;
+}
+
+.can-img-1 {
+  width: 70%;
+
+  position: relative;
+}
+
+.can-img-2 {
+  width: 90%;
+
+  position: relative;
+}
+
+.shadow-img {
+  position: absolute;
+  top: 0;
+  right: -20px;
+  height: 100%;
+
+  opacity: 0.6;
+}
+
+.under-img {
+  position: absolute;
+  bottom: 124px;
+  left: 46%;
+  transform: translateX(-60%);
+  width: 150px;
+
+  opacity: 0.9;
+}
+.under-img-1 {
+  position: absolute;
+  bottom: 113px;
+  left: 46%;
+  transform: translateX(-55%);
+  width: 130px;
+
+  opacity: 0.9;
+}
+.under-img-defrant {
+  position: absolute;
+  bottom: 69px;
+  left: 50%;
+  transform: translateX(-59%);
+  width: 230px;
+  z-index: 0;
+  opacity: 0.9;
+}
+.white-shadow-circle {
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.112) 0%,
+    rgb(0, 0, 0) 70%
+  );
+}
+.can-containerr {
+  width: 83%;
+  opacity: 0;
+  transition: opacity 2s ease-in-out, transform 2s ease;
+  transform: translateY(50px);
+}
+
+.can-containerr.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.can-containerr.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+}
+.me-30 {
+  margin-right: 30px;
+}
+.me-35 {
+  margin-right: 38px;
+}

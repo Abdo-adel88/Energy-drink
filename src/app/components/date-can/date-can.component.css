@@ -1,0 +1,28 @@
+.can-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 20px;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+  perspective: 1000px;
+}
+
+.can-jpg-2 {
+  position: absolute;
+  bottom: 206px;
+  left: 53%;
+  width: 843px;
+  height: 330px;
+  transform: translateX(-50%) rotateZ(0deg);
+  transition: transform 1s ease-out;
+  will-change: transform;
+}
+.can-wrapper {
+  transition: opacity 0s ease-in-out;
+}
+.can-jpg-2 {
+  transition: transform 0s ease-out, opacity 0.3s ease-out;
+}

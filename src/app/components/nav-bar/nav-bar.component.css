@@ -1,0 +1,22 @@
+.ms-8 {
+  margin-left: 5.8rem;
+}
+
+.logo {
+    background-image: url("/assets/img/1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 100px;
+  }
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: var(--color-black);
+    font-size: 16px;
+    text-decoration: none;
+  }
